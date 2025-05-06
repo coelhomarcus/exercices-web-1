@@ -7,8 +7,10 @@
     <title>Web I - Marcus Coelho</title>
     <style>
         body {
-            background: #008080;
-            /* Cor clássica do Windows 95 */
+            background: #008080 url('./assets/wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             font-family: 'MS Sans Serif', 'Arial', sans-serif;
             color: #000;
             margin: 0;
@@ -18,7 +20,17 @@
             justify-content: center;
             overflow: hidden;
             user-select: none;
-            /* Impede a seleção de texto */
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: -1;
         }
 
         .desktop-icon {
@@ -144,7 +156,6 @@
             list-style: none;
         }
 
-        /* Estilo de botão do Windows 95 */
         .win95-link {
             display: block;
             text-decoration: none;
