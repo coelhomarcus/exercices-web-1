@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    background-color: #F8FAFC;
+}
+
+.form-sec {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 159.5px;
+    margin-bottom: 10px;
+}
+
+.form-sec h1 {
+    font-size: 36px;
+}
+
+.form-sec p {
+    font-size: 16px;
+    color: #475569;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    color: #1E293B;
+    font-weight: bold;
+}
+
+.email-input {
+    border: 1px solid #E2E8F0;
+    padding: 16px 12px;
+    outline: none;
+}
+
+.senha-input {
+    border: 1px solid #E2E8F0;
+    padding: 16px 12px;
+    display: flex;
+}
+
+.senha-input input {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.senha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.senha a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #7C3AED;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info button {
+    width: 100%;
+    background-color: #7C3AED;
+    border: none;
+    padding: 24px 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.bg {
+    background-image: url(./assets/bg.jpg);
+    background-size: cover;
+}
+
+.register {
+    align-self: self-start;
+}
+
+.register a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #7C3AED;
+}

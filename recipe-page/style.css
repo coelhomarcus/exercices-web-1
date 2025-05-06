@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Alice", serif;
+    background-image: url(./src/bg-image.png);
+    background-color: #573824;
+    background-size: cover;
+    margin-block: 28px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    background: #F0E8C2;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 24px;
+}
+
+.container img {
+    width: 100%;
+}
+
+.sections {
+    display: grid;
+    gap: 24px;
+    padding-inline: 24px;
+    padding-bottom: 24px;
+}
+
+.about {
+    display: grid;
+    gap: 4px;
+}
+
+.about-desc {
+    display: grid;
+    gap: 12px;
+}
+
+.ingredientes {
+    display: grid;
+    gap: 4px;
+}
+
+.preparo {
+    display: grid;
+    gap: 4px;
+}
+
+.preparo-desc {
+    display: grid;
+    gap: 12px;
+}
+
+.text-color-primary {
+    color: #291B1A;
+}
+
+.text-color-secondary {
+    color: #573A37;
+}
+
+ul {
+    line-height: 150%;
+}
+
+li {
+    list-style-position: inside;
+    font-variant-numeric: tabular-nums;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #F0E8C2;
+    margin-top: 28px;
+}
