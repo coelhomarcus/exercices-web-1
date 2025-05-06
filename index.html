@@ -4,49 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividades WEB 1</title>
+    <title>Web I - Marcus Coelho</title>
     <style>
-        .body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            color: #141414;
+        body {
+            background: #008080;
+            /* Cor clássica do Windows 95 */
+            font-family: 'MS Sans Serif', 'Arial', sans-serif;
+            color: #000;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            user-select: none;
+            /* Impede a seleção de texto */
+        }
+
+        .desktop-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .desktop-icon img {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 6px;
+        }
+
+        .desktop-icon span {
+            color: white;
+            text-align: center;
+            font-size: 11px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .win95-window {
+            background: #c0c0c0;
+            border-top: 1px solid #dfdfdf;
+            border-left: 1px solid #dfdfdf;
+            border-right: 2px solid #404040;
+            border-bottom: 2px solid #404040;
+            width: 450px;
+            max-width: 90vw;
+            max-height: 90vh;
+            position: relative;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .win95-titlebar {
+            background: #000080;
+            /* Azul Windows 95 */
+            color: #fff;
+            padding: 2px 3px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 11px;
+            height: 18px;
+        }
+
+        .win95-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .win95-title img {
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+        }
+
+        .win95-controls {
+            display: flex;
+        }
+
+        .win95-button {
+            width: 16px;
+            height: 14px;
+            margin-left: 2px;
+            background: #c0c0c0;
+            color: #000;
+            border-top: 1px solid #dfdfdf;
+            border-left: 1px solid #dfdfdf;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .win95-button:active {
+            border-top: 1px solid #404040;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #dfdfdf;
+            border-bottom: 1px solid #dfdfdf;
+        }
+
+        .win95-content {
+            padding: 10px;
+            overflow-y: auto;
+            max-height: calc(90vh - 60px);
+        }
+
+        h1 {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 12px;
+            margin: 0 0 15px 0;
+            color: #333;
+            font-weight: normal;
         }
 
         ul {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 8px;
+            padding: 0;
+            margin: 0;
         }
 
-        a {
-            color: #ff6347;
-            font-size: 1.5rem;
+        li {
+            list-style: none;
         }
 
-        a:hover {
-            color: #a93622;
+        /* Estilo de botão do Windows 95 */
+        .win95-link {
+            display: block;
+            text-decoration: none;
+            background: #c0c0c0;
+            color: #000;
+            font-size: 12px;
+            padding: 6px 8px;
+            text-align: left;
+            width: calc(100% - 20px);
+            border-top: 1px solid #dfdfdf;
+            border-left: 1px solid #dfdfdf;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            position: relative;
+            box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff;
+        }
+
+        .win95-link:active {
+            background: #c0c0c0;
+            border-top: 1px solid #404040;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #dfdfdf;
+            border-bottom: 1px solid #dfdfdf;
+            box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #ffffff;
+        }
+
+        .win95-link-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+
+        .info-bar {
+            background-color: #c0c0c0;
+            border-top: 1px solid #808080;
+            padding: 3px 5px;
+            font-size: 11px;
+            color: #000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+        }
+
+        .status img {
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
         }
     </style>
+    <link rel="icon" href="./assets/folder.webp" type="image/x-icon">
 </head>
 
-<body class="body">
-    <h1>Atividades WEB 1 - Turma 2023</h1>
-    <h2>Marcus Vinicius Rangel Coelho</h2>
-    <div>
-        <ul>
-            <li>
-                <a href="./recipe-page/index.html" target="_blank">Recipe Page</a>
-            </li>
-            <li>
-                <a href="./vertigo-page/index.html" target="_blank">Vertigo Page</a>
-            </li>
-            <li>
-                <a href="./travelgram-page/index.html" target="_blank">Travelgram Page</a>
-            </li>
-            <li>
-                <a href="./form-matricula/index.html" target="_blank">Formulario de Matricula</a>
-            </li>
-        </ul>
+<body>
+    <!-- Ícone na área de trabalho -->
+    <a href="https://coelhomarcus.com" target="_blank" class="desktop-icon">
+        <img src="https://coelhomarcus.com/src/icons/profile.jpg" alt=" My Computer">
+        <span>Marcus</span>
+    </a>
+
+    <!-- Janela principal -->
+    <div class="win95-window">
+        <div class="win95-titlebar">
+            <div class="win95-title">
+                <img src="./assets/folder.webp" alt="Folder Icon">
+                Exercícios Web I - Marcus Coelho
+            </div>
+            <div class="win95-controls">
+                <div class="win95-button">_</div>
+                <div class="win95-button">□</div>
+                <div class="win95-button">X</div>
+            </div>
+        </div>
+
+        <div class="win95-content">
+            <h1>Exercícios Web I - Turma 2023</h1>
+            <h2>Marcus Vinicius Rangel Coelho</h2>
+
+            <ul>
+                <li>
+                    <a href="./recipe-page/index.html" target="_blank" class="win95-link">
+                        <img src="./assets/pin.png" alt="HTML" class="win95-link-icon">
+                        Recipe
+                    </a>
+                </li>
+                <li>
+                    <a href="./vertigo-page/index.html" target="_blank" class="win95-link">
+                        <img src="./assets/pin.png" alt="HTML" class="win95-link-icon">
+                        Vertigo
+                    </a>
+                </li>
+                <li>
+                    <a href="./travelgram-page/index.html" target="_blank" class="win95-link">
+                        <img src="./assets/pin.png" alt="HTML" class="win95-link-icon">
+                        Travelgram
+                    </a>
+                </li>
+                <li>
+                    <a href="./form-matricula/index.html" target="_blank" class="win95-link">
+                        <img src="./assets/pin.png" alt="HTML" class="win95-link-icon">
+                        Formulário - Estrelas do Amanhã
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info-bar">
+            <div class="status">
+                Melhores sites do mundo
+            </div>
+            <div>2.5 MB</div>
+        </div>
     </div>
 </body>
 
