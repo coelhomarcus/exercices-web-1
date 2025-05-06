@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Matricula</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="left">
+            <div class="back-button">
+                <img src="./assets/arrow-left-02.png" alt="Voltar">
+                <p>Voltar</p>
+            </div>
+            <div class="info">
+                <h1>Formulário de matrícula</h1>
+                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+                </p>
+            </div>
+            <div class="input-group">
+                <h4>Informações da criança</h4>
+                <div class="input-normal">
+                    <label for="name">Nome completo</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input-normal">
+                    <label for="date">Data de nascimento</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="input-normal">
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="mas">Masculino</option>
+                        <option value="fem">Feminino</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div class="input-normal">
+                    <label for="infomed">Informações Medicas</label>
+                    <textarea name="infomed" id="infomed"></textarea>
+                </div>
+                <div class="input-normal">
+                    <label for="certnasc">Certidão de nascimento</label>
+                    <input type="file" name="certnasc" id="certnasc">
+                </div>
+            </div>
+            <div class="input-group">
+                <h4>Endereço Residencial</h4>
+                <div class="input-normal">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep">
+                </div>
+                <div class="input-row">
+                    <div class="input-normal">
+                        <label for="rua">Rua</label>
+                        <input type="date" name="rua" id="rua" placeholder="Rua das Flores">
+                    </div>
+                    <div class="input-normal">
+                        <label for="number">Número</label>
+                        <input type="text" name="number" id="number" placeholder="123">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-normal">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="São Paulo">
+                    </div>
+                    <div class="input-normal">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado" id="estado" placeholder="SP">
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <h4>Informações do responsável</h4>
+                <div class="input-normal">
+                    <label for="name-resp">Nome do responsável</label>
+                    <input type="text" name="name-resp" id="name-resp">
+                </div>
+                <div class="input-normal">
+                    <label for="tel-resp">Telefone</label>
+                    <input type="tel" name="tel-resp" id="tel-resp">
+                </div>
+                <div class="input-normal">
+                    <label for="email-resp">E-mail</label>
+                    <input type="email" name="email-resp" id="email-resp">
+                </div>
+            </div>
+            <div class="input-group">
+                <h4>Opções de matrícula</h4>
+                <p>Selecione o turno de estudo</p>
+                <div class="input-checkbox-group-one">
+                    <div class="input-checkbox">
+                        <input type="checkbox" name="turno" id="manha">
+                        <img src="./assets/sun-cloud-02.png" alt="">
+                        <label for="manha">Manhã</label>
+                    </div>
+                    <div class="input-checkbox">
+                        <input type="checkbox" name="turno" id="tarde">
+                        <img src="./assets/sun-02.png" alt="">
+                        <label for="tarde">Tarde</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <h4>Opções de matrícula</h4>
+                <p>Selecione o turno de estudo</p>
+                <div class="input-checkbox-group-two">
+                    <div class="input-checkbox-two">
+                        <input type="checkbox" name="turno" id="manha">
+                        <img src="./assets/football.png" alt="">
+                        <label for="manha">Futebol</label>
+                    </div>
+                    <div class="input-checkbox-two">
+                        <input type="checkbox" name="turno" id="manha">
+                        <img src="./assets/basketball-02.png" alt="">
+                        <label for="manha">Basquete</label>
+                    </div>
+                    <div class="input-checkbox-two">
+                        <input type="checkbox" name="turno" id="manha">
+                        <img src="./assets/swimming.png" alt="">
+                        <label for="manha">Natação</label>
+                    </div>
+                    <div class="input-checkbox-two">
+                        <input type="checkbox" name="turno" id="manha">
+                        <img src="./assets/yoga-02.png" alt="">
+                        <label for="manha">Yoga</label>
+                    </div>
+                </div>
+                <div class="input-checkbox-group-two">
+
+                    <div class="input-checkbox-two">
+                        <input type="checkbox" name="turno" id="manha">
+                        <img src="./assets/volleyball.png" alt="">
+                        <label for="manha">Volei</label>
+                    </div>
+                    <div class="input-checkbox-two">
+                        <input type="checkbox" name="turno" id="manha">
+                        <img src="./assets/boxing-glove-01.png" alt="">
+                        <label for="manha">Boxe</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="input-buttons">
+                <button class="save-resp">Salvar respostas</button>
+                <button class="confirm">Fazer matrícula</button>
+            </div>
+        </section>
+        <section class="right">
+            <img src="./assets/star.svg" alt="">
+            <h1>Porque cada momento de <span style="color: #E43A12">aprendizado</span> conta</h1>
+            <h2>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+            </h2>
+            <div class="Illustration">
+                <img src="./assets/Illustration.png" alt="">
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
