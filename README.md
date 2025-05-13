@@ -1,6 +1,6 @@
 ## 🚀 Exercícios Web 1
 
-Este repositório contém os exercícios desenvolvidos para a disciplina de Web I (Turma 2023 - UNIFESSPA) por Marcus Vinicius Rangel Coelho.
+Este repositório contém os exercícios desenvolvidos para a disciplina de Web I (Turma 2023 - UNIFESSPA)<br/>por Marcus Vinicius Rangel Coelho.
 
 [https://coelhomarcus.github.io/exercices-web-1](https://coelhomarcus.github.io/exercices-web-1/)
 
@@ -12,16 +12,19 @@ Este repositório contém os exercícios desenvolvidos para a disciplina de Web 
 ## 📌 Exercícios Incluídos
 
 ### Recipe Page
-Uma página de receita com layout estruturado, imagens e formatação adequada para instruções culinárias.
+Página de receita.
 
 ### Vertigo Page
-Página de login/registro com design moderno, elementos interativos e validação visual.
+Página de login/registro.
 
 ### Travelgram Page
-Interface inspirada em redes sociais focada em compartilhamento de fotos de viagem, com grid de imagens e navegação intuitiva.
+Interface inspirada em redes sociais.
 
 ### Formulário Estrelas do Amanhã
-Formulário completo de matrícula para uma escola de esportes com diferentes modalidades e campos de informação pessoal.
+Formulário de matrícula para uma escola.
+
+### Tech News
+Página de Notícias Tech
 
 ## 📝 Notas
 
