@@ -1,370 +1,387 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-wrap: nowrap;
-    min-height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .left {
-    flex: 1;
-    background-color: #fff;
-    padding: 64px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    overflow-y: auto;
+  flex: 1;
+  background-color: #fff;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
 }
 
 .right {
-    flex: 1;
-    position: sticky;
-    top: 0;
-    background-color: #FEE7D6;
-    padding: 64px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex: 1;
+  position: sticky;
+  top: 0;
+  background-color: #fee7d6;
+  padding: 64px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.right img[src*="star.svg"] {
-    width: 20rem;
-    height: auto;
+.right .logo {
+  width: 18rem;
+  height: auto;
 }
 
 .right h1 {
-    font-size: 48px;
-    margin-top: 20px;
+  font-size: 3rem;
+  margin-top: 20px;
 }
 
 .right h2 {
-    color: #57534E;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 20px;
+  color: #57534e;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .right .Illustration {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-grow: 1;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1;
+  margin-top: 20px;
 }
 
 .right .Illustration img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .left .back-button {
-    display: flex;
-    color: #57534E;
+  display: flex;
+  color: #57534e;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 18px;
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .input-group h4 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .input-normal {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .input-normal label {
-    font-size: 14px;
-    margin-bottom: 2px;
-    color: #57534E;
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #57534e;
 }
 
 .input-normal input,
 textarea,
 select {
-    padding-inline: 10px;
-    padding-block: 10px;
+  padding-inline: 10px;
+  padding-block: 10px;
 }
 
 .input-row {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .input-row .input-normal:first-child {
-    flex: 3;
+  flex: 3;
 }
 
 .input-row .input-normal:last-child {
-    flex: 1;
+  flex: 1;
 }
 
 .input-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: end;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
 }
 
 .input-buttons button {
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid #E43A12;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #e43a12;
 }
 
 .confirm {
-    background-color: #E43A12;
-    color: #fff;
+  background-color: #e43a12;
+  color: #fff;
 }
 
 .save-resp {
-    background-color: transparent;
-    color: #E43A12;
+  background-color: transparent;
+  color: #e43a12;
 }
 
 input,
 textarea,
 select {
-    border: 1px solid #D6D3D1;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 16px;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 select {
-    padding-right: 30px;
-    appearance: none;
-    background-image: url("./assets/arrow-down-01.png");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 16px;
+  padding-right: 30px;
+  appearance: none;
+  background-image: url("./assets/arrow-down-01.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
 }
 
 textarea {
-    resize: vertical;
-    min-height: 100px;
+  resize: vertical;
+  min-height: 100px;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-    outline: none;
-    border: 1px solid #E43A12;
-    box-shadow: 0 0 5px rgba(228, 58, 18, 0.5);
+  outline: none;
+  border: 1px solid #e43a12;
+  box-shadow: 0 0 5px rgba(228, 58, 18, 0.5);
 }
 
 input[type="checkbox"]:focus,
 input[type="radio"]:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .input-checkbox-group-one {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .input-checkbox-group-two {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .input-checkbox {
-    width: 100%;
-    border: 1px solid #D6D3D1;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: flex-start;
-    padding: 20px;
-    position: relative;
+  width: 100%;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
 }
 
 .input-checkbox input[type="radio"] {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .input-checkbox-two {
-    border: 1px solid #D6D3D1;
-    border-radius: 8px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: flex-start;
-    padding: 20px;
-    position: relative;
+  border: 1px solid #d6d3d1;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
 }
 
 .input-checkbox-two input[type="checkbox"] {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .input-checkbox img,
 .input-checkbox-two img {
-    margin-top: 15px;
-    align-self: center;
+  margin-top: 15px;
+  align-self: center;
 }
 
 .input-checkbox label,
 .input-checkbox-two label {
-    align-self: center;
+  align-self: center;
 }
 
 .file-upload-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    border: 2px dashed #ccc;
-    border-radius: 8px;
-    margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
 }
 
 .file-input {
-    display: none;
+  display: none;
 }
 
 .file-upload-placeholder {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .file-upload-placeholder img {
-    width: 60px;
-    height: auto;
-    margin-bottom: 15px;
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .file-upload-placeholder p {
-    color: #57534E;
-    font-size: 16px;
+  color: #57534e;
+  font-size: 16px;
 }
 
 .file-upload-container:hover {
-    border-color: #E43A12;
+  border-color: #e43a12;
 }
 
 .terms-container {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .terms-checkbox {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .terms-checkbox input[type="checkbox"] {
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 .terms-checkbox label {
-    font-size: 14px;
-    color: #57534E;
-    line-height: 1.4;
+  font-size: 14px;
+  color: #57534e;
+  line-height: 1.4;
 }
 
 .terms-highlight {
-    color: #E43A12;
-    font-weight: 500;
-    cursor: pointer;
+  color: #e43a12;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1390px) {
+  .right h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-row .input-normal {
+    width: 100%;
+  }
+
+  .input-row .input-normal:first-child,
+  .input-row .input-normal:last-child {
+    flex: auto;
+  }
+
+  .right .Illustration img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .input-row {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .input-checkbox-group-one,
+  .input-checkbox-group-two {
+    flex-direction: column;
+  }
 
-    .input-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .input-checkbox-group-one,
-    .input-checkbox-group-two {
-        flex-direction: column;
-    }
-
-    .input-row .input-normal {
-        width: 100%;
-    }
-
-    .input-row .input-normal:first-child,
-    .input-row .input-normal:last-child {
-        flex: auto;
-    }
+  .right h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 
-    .right {
-        position: relative;
-        height: auto;
-        min-height: 80vh;
-    }
+  .right {
+    position: relative;
+    height: auto;
+    min-height: 80vh;
+  }
 
-    .left {
-        padding: 40px;
-    }
+  .left {
+    padding: 40px;
+  }
 
-    .right {
-        padding: 40px;
-    }
+  .right {
+    padding: 40px;
+  }
 
-    .right h1 {
-        font-size: 36px;
-    }
+  .right h1 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .input-row {
-        flex-direction: column;
-        gap: 0;
-    }
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
 
-    .left,
-    .right {
-        padding: 30px;
-    }
+  .left,
+  .right {
+    padding: 30px;
+  }
 
-    .right h1 {
-        font-size: 28px;
-    }
+  .right h1 {
+    font-size: 28px;
+  }
 }

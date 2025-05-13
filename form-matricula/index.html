@@ -1,206 +1,291 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Matrícula - Estrelas do Amanhã</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <section class="left">
-            <div class="back-button">
-                <img src="./assets/arrow-left-02.png" alt="Seta para voltar">
-                <p>Voltar</p>
+      <section class="left">
+        <div class="back-button">
+          <img src="./assets/arrow-left-02.png" alt="Seta para voltar" />
+          <p>Voltar</p>
+        </div>
+
+        <div class="info">
+          <h1>Formulário de matrícula</h1>
+          <p>
+            Preencha os dados abaixo para matricular seu filho na escola de
+            educação infantil Estrelas do Amanhã.
+          </p>
+        </div>
+
+        <form id="matricula-form" action="#" method="post">
+          <div class="input-group">
+            <h4>Informações da criança</h4>
+
+            <div class="input-normal">
+              <label for="name">Nome completo</label>
+              <input type="text" name="name" id="name" required />
             </div>
 
-            <div class="info">
-                <h1>Formulário de matrícula</h1>
-                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
-                </p>
+            <div class="input-normal">
+              <label for="date">Data de nascimento</label>
+              <input type="date" name="date" id="date" required />
             </div>
 
-            <form id="matricula-form" action="#" method="post">
-                <div class="input-group">
-                    <h4>Informações da criança</h4>
-
-                    <div class="input-normal">
-                        <label for="name">Nome completo</label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-
-                    <div class="input-normal">
-                        <label for="date">Data de nascimento</label>
-                        <input type="date" name="date" id="date" required>
-                    </div>
-
-                    <div class="input-normal">
-                        <label for="sexo">Sexo</label>
-                        <select name="sexo" id="sexo" required>
-                            <option value="">Selecione</option>
-                            <option value="mas">Masculino</option>
-                            <option value="fem">Feminino</option>
-                            <option value="outros">Outros</option>
-                        </select>
-                    </div>
-
-                    <div class="input-normal">
-                        <label for="infomed">Informações Médicas</label>
-                        <textarea name="infomed" id="infomed"
-                            placeholder="Alergias, condições médicas, medicações..."></textarea>
-                    </div>
-
-                    <div class="input-normal">
-                        <label for="certnasc">Certidão de nascimento</label>
-                        <label for="certnasc" class="file-upload-container">
-                            <input type="file" name="certnasc" id="certnasc" class="file-input" required>
-                            <div class="file-upload-placeholder">
-                                <img src="./assets/cloud-upload.svg" alt="Ícone de upload">
-                                <p>Clique aqui para selecionar arquivos</p>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <h4>Endereço Residencial</h4>
-
-                    <div class="input-normal">
-                        <label for="cep">CEP</label>
-                        <input type="text" name="cep" id="cep" placeholder="00000-000" required>
-                    </div>
-
-                    <div class="input-row">
-                        <div class="input-normal">
-                            <label for="rua">Rua</label>
-                            <input type="text" name="rua" id="rua" placeholder="Rua das Flores" required>
-                        </div>
-                        <div class="input-normal">
-                            <label for="number">Número</label>
-                            <input type="text" name="number" id="number" placeholder="123" required>
-                        </div>
-                    </div>
-
-                    <div class="input-row">
-                        <div class="input-normal">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" name="cidade" id="cidade" placeholder="São Paulo" required>
-                        </div>
-                        <div class="input-normal">
-                            <label for="estado">Estado</label>
-                            <input type="text" name="estado" id="estado" placeholder="SP" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <h4>Informações do responsável</h4>
-
-                    <div class="input-normal">
-                        <label for="name-resp">Nome do responsável</label>
-                        <input type="text" name="name-resp" id="name-resp" required>
-                    </div>
-
-                    <div class="input-normal">
-                        <label for="tel-resp">Telefone</label>
-                        <input type="tel" name="tel-resp" id="tel-resp" placeholder="(00) 00000-0000" required>
-                    </div>
-
-                    <div class="input-normal">
-                        <label for="email-resp">E-mail</label>
-                        <input type="email" name="email-resp" id="email-resp" placeholder="seuemail@exemplo.com"
-                            required>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <h4>Opções de matrícula</h4>
-                    <p>Selecione o turno de estudo</p>
-
-                    <div class="input-checkbox-group-one">
-                        <div class="input-checkbox">
-                            <input type="radio" name="turno" id="manha" required>
-                            <img src="./assets/sun-cloud-02.png" alt="Ícone de manhã">
-                            <label for="manha">Manhã</label>
-                        </div>
-                        <div class="input-checkbox">
-                            <input type="radio" name="turno" id="tarde" required>
-                            <img src="./assets/sun-02.png" alt="Ícone de tarde">
-                            <label for="tarde">Tarde</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <h4>Atividades esportivas</h4>
-                    <p>Selecione as atividades de interesse</p>
-
-                    <div class="input-checkbox-group-two">
-                        <div class="input-checkbox-two">
-                            <input type="checkbox" name="esporte" id="futebol" value="futebol">
-                            <img src="./assets/football.png" alt="Ícone de futebol">
-                            <label for="futebol">Futebol</label>
-                        </div>
-                        <div class="input-checkbox-two">
-                            <input type="checkbox" name="esporte" id="basquete" value="basquete">
-                            <img src="./assets/basketball-02.png" alt="Ícone de basquete">
-                            <label for="basquete">Basquete</label>
-                        </div>
-                        <div class="input-checkbox-two">
-                            <input type="checkbox" name="esporte" id="natacao" value="natacao">
-                            <img src="./assets/swimming.png" alt="Ícone de natação">
-                            <label for="natacao">Natação</label>
-                        </div>
-                        <div class="input-checkbox-two">
-                            <input type="checkbox" name="esporte" id="yoga" value="yoga">
-                            <img src="./assets/yoga-02.png" alt="Ícone de yoga">
-                            <label for="yoga">Yoga</label>
-                        </div>
-                    </div>
-
-                    <div class="input-checkbox-group-two">
-                        <div class="input-checkbox-two">
-                            <input type="checkbox" name="esporte" id="volei" value="volei">
-                            <img src="./assets/volleyball.png" alt="Ícone de vôlei">
-                            <label for="volei">Vôlei</label>
-                        </div>
-                        <div class="input-checkbox-two">
-                            <input type="checkbox" name="esporte" id="boxe" value="boxe">
-                            <img src="./assets/boxing-glove-01.png" alt="Ícone de boxe">
-                            <label for="boxe">Boxe</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="terms-container">
-                    <div class="terms-checkbox">
-                        <input type="checkbox" id="terms-privacy" name="terms-privacy" required>
-                        <label for="terms-privacy">Declaro que li e concordo com os <span class="terms-highlight">Termos
-                                e
-                                Condições</span> e com a <span class="terms-highlight">Política de Privacidade</span> da
-                            escola Estrela do Amanhã.</label>
-                    </div>
-                </div>
-
-                <div class="input-buttons">
-                    <button type="button" class="save-resp">Salvar respostas</button>
-                    <button type="submit" class="confirm">Fazer matrícula</button>
-                </div>
-            </form>
-        </section>
-
-        <section class="right">
-            <img src="./assets/star.svg" alt="Estrela">
-            <h1>Porque cada momento de <span style="color: #E43A12">aprendizado</span> conta</h1>
-            <h2>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
-            </h2>
-            <div class="Illustration">
-                <img src="./assets/Illustration.png" alt="Ilustração de crianças estudando">
+            <div class="input-normal">
+              <label for="sexo">Sexo</label>
+              <select name="sexo" id="sexo" required>
+                <option value="">Selecione</option>
+                <option value="mas">Masculino</option>
+                <option value="fem">Feminino</option>
+                <option value="outros">Outros</option>
+              </select>
             </div>
-        </section>
+
+            <div class="input-normal">
+              <label for="infomed">Informações Médicas</label>
+              <textarea
+                name="infomed"
+                id="infomed"
+                placeholder="Alergias, condições médicas, medicações..."
+              ></textarea>
+            </div>
+
+            <div class="input-normal">
+              <label for="certnasc">Certidão de nascimento</label>
+              <label for="certnasc" class="file-upload-container">
+                <input
+                  type="file"
+                  name="certnasc"
+                  id="certnasc"
+                  class="file-input"
+                  required
+                />
+                <div class="file-upload-placeholder">
+                  <img src="./assets/cloud-upload.svg" alt="Ícone de upload" />
+                  <p>Clique aqui para selecionar arquivos</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <h4>Endereço Residencial</h4>
+
+            <div class="input-normal">
+              <label for="cep">CEP</label>
+              <input
+                type="text"
+                name="cep"
+                id="cep"
+                placeholder="00000-000"
+                required
+              />
+            </div>
+
+            <div class="input-row">
+              <div class="input-normal">
+                <label for="rua">Rua</label>
+                <input
+                  type="text"
+                  name="rua"
+                  id="rua"
+                  placeholder="Rua das Flores"
+                  required
+                />
+              </div>
+              <div class="input-normal">
+                <label for="number">Número</label>
+                <input
+                  type="text"
+                  name="number"
+                  id="number"
+                  placeholder="123"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-normal">
+                <label for="cidade">Cidade</label>
+                <input
+                  type="text"
+                  name="cidade"
+                  id="cidade"
+                  placeholder="São Paulo"
+                  required
+                />
+              </div>
+              <div class="input-normal">
+                <label for="estado">Estado</label>
+                <input
+                  type="text"
+                  name="estado"
+                  id="estado"
+                  placeholder="SP"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <h4>Informações do responsável</h4>
+
+            <div class="input-normal">
+              <label for="name-resp">Nome do responsável</label>
+              <input type="text" name="name-resp" id="name-resp" required />
+            </div>
+
+            <div class="input-normal">
+              <label for="tel-resp">Telefone</label>
+              <input
+                type="tel"
+                name="tel-resp"
+                id="tel-resp"
+                placeholder="(00) 00000-0000"
+                required
+              />
+            </div>
+
+            <div class="input-normal">
+              <label for="email-resp">E-mail</label>
+              <input
+                type="email"
+                name="email-resp"
+                id="email-resp"
+                placeholder="seuemail@exemplo.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <h4>Opções de matrícula</h4>
+            <p>Selecione o turno de estudo</p>
+
+            <div class="input-checkbox-group-one">
+              <div class="input-checkbox">
+                <input type="radio" name="turno" id="manha" required />
+                <img src="./assets/sun-cloud-02.png" alt="Ícone de manhã" />
+                <label for="manha">Manhã</label>
+              </div>
+              <div class="input-checkbox">
+                <input type="radio" name="turno" id="tarde" required />
+                <img src="./assets/sun-02.png" alt="Ícone de tarde" />
+                <label for="tarde">Tarde</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <h4>Atividades esportivas</h4>
+            <p>Selecione as atividades de interesse</p>
+
+            <div class="input-checkbox-group-two">
+              <div class="input-checkbox-two">
+                <input
+                  type="checkbox"
+                  name="esporte"
+                  id="futebol"
+                  value="futebol"
+                />
+                <img src="./assets/football.png" alt="Ícone de futebol" />
+                <label for="futebol">Futebol</label>
+              </div>
+              <div class="input-checkbox-two">
+                <input
+                  type="checkbox"
+                  name="esporte"
+                  id="basquete"
+                  value="basquete"
+                />
+                <img src="./assets/basketball-02.png" alt="Ícone de basquete" />
+                <label for="basquete">Basquete</label>
+              </div>
+              <div class="input-checkbox-two">
+                <input
+                  type="checkbox"
+                  name="esporte"
+                  id="natacao"
+                  value="natacao"
+                />
+                <img src="./assets/swimming.png" alt="Ícone de natação" />
+                <label for="natacao">Natação</label>
+              </div>
+              <div class="input-checkbox-two">
+                <input type="checkbox" name="esporte" id="yoga" value="yoga" />
+                <img src="./assets/yoga-02.png" alt="Ícone de yoga" />
+                <label for="yoga">Yoga</label>
+              </div>
+            </div>
+
+            <div class="input-checkbox-group-two">
+              <div class="input-checkbox-two">
+                <input
+                  type="checkbox"
+                  name="esporte"
+                  id="volei"
+                  value="volei"
+                />
+                <img src="./assets/volleyball.png" alt="Ícone de vôlei" />
+                <label for="volei">Vôlei</label>
+              </div>
+              <div class="input-checkbox-two">
+                <input type="checkbox" name="esporte" id="boxe" value="boxe" />
+                <img src="./assets/boxing-glove-01.png" alt="Ícone de boxe" />
+                <label for="boxe">Boxe</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="terms-container">
+            <div class="terms-checkbox">
+              <input
+                type="checkbox"
+                id="terms-privacy"
+                name="terms-privacy"
+                required
+              />
+              <label for="terms-privacy"
+                >Declaro que li e concordo com os
+                <span class="terms-highlight">Termos e Condições</span> e com a
+                <span class="terms-highlight">Política de Privacidade</span> da
+                escola Estrela do Amanhã.</label
+              >
+            </div>
+          </div>
+
+          <div class="input-buttons">
+            <button type="button" class="save-resp">Salvar respostas</button>
+            <button type="submit" class="confirm">Fazer matrícula</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="right">
+        <img src="./assets/star.svg" class="logo" alt="Estrela" />
+        <h1>
+          Porque cada momento de
+          <span style="color: #e43a12">aprendizado</span> conta
+        </h1>
+        <h2>
+          Inscreva seu filho em nossa escola e veja-o florescer em um ambiente
+          acolhedor, seguro e estimulante.
+        </h2>
+        <div class="Illustration">
+          <img
+            src="./assets/Illustration.png"
+            alt="Ilustração de crianças estudando"
+          />
+        </div>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>
