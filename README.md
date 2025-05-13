@@ -11,19 +11,19 @@ Este repositório contém os exercícios desenvolvidos para a disciplina de Web 
 
 ## 📌 Exercícios Incluídos
 
-### Recipe Page
+### 📖 Recipe
 Página de receita.
 
-### Vertigo Page
+### 🔐 Vertigo
 Página de login/registro.
 
-### Travelgram Page
+### 📸 Travelgram
 Interface inspirada em redes sociais.
 
-### Formulário Estrelas do Amanhã
+### 📝 Estrelas do Amanhã
 Formulário de matrícula para uma escola.
 
-### Tech News
+### 📰 Tech News
 Página de Notícias Tech
 
 ## 📝 Notas
