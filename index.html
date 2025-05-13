@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/glass-effects.css" />
         <link rel="stylesheet" href="./assets/style.css" />
         <link rel="icon" href="./assets/img/finder.webp" type="image/x-icon" />
+        <script src="./assets/js/modal.js" defer></script>
     </head>
 
     <body>
@@ -17,12 +18,32 @@
             <div class="reflection"></div>
             <div class="reflection"></div>
         </div>
-
         <!-- Ícone do Finder -->
-        <a href="https://coelhomarcus.com" target="_blank" class="finder-icon">
+        <div class="finder-icon" id="profile-icon">
             <img src="./assets/img/profile.webp" alt="Profile" />
             <span>Marcus</span>
-        </a>
+        </div>
+
+        <!-- Modal para o iframe -->
+        <div id="iframe-modal" class="iframe-modal">
+            <div class="iframe-container">
+                <div class="iframe-titlebar">
+                    <div class="iframe-title">
+                        <img src="./assets/img/finder.webp" alt="Finder Icon" />
+                        coelhomarcus.com
+                    </div>
+                    <div class="iframe-controls">
+                        <div
+                            class="macos-button macos-close"
+                            id="close-iframe"
+                        ></div>
+                        <div class="macos-button macos-minimize"></div>
+                        <div class="macos-button macos-expand"></div>
+                    </div>
+                </div>
+                <iframe src="https://coelhomarcus.com" frameborder="0"></iframe>
+            </div>
+        </div>
         <!-- Janela principal -->
         <div class="macos-window">
             <div class="macos-titlebar">
