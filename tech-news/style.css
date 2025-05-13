@@ -242,6 +242,40 @@ body {
     line-height: 1.4;
 }
 
+.ia-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-inline: var(--container-margin);
+}
+
+.ia-cards {
+    display: flex;
+    max-width: 100%;
+}
+
+.ia-cards .card-description {
+    color: var(--text-color-secondary);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.ia-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ia-img {
+    width: auto;
+    height: 200px;
+}
+
+.final-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 @media (max-width: 1024px) {
     .popular-cards {
         grid-template-columns: repeat(3, 1fr);
