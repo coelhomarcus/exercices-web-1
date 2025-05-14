@@ -134,10 +134,11 @@ main {
     max-width: 280px;
     background: #292C34;
     border-radius: 8px;
-    padding: 10px;
+    padding-inline: 10px;
+    padding-block: 15px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .works .card h3 {
