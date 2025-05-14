@@ -38,11 +38,9 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(
-        circle at 50% 50%,
-        rgba(255, 255, 255, 0),
-        rgba(0, 0, 0, 0.4)
-    );
+    background: radial-gradient(circle at 50% 50%,
+            rgba(255, 255, 255, 0),
+            rgba(0, 0, 0, 0.4));
     z-index: -1;
     pointer-events: none;
 }
@@ -110,15 +108,32 @@ body::after {
     animation: glow 8s infinite alternate;
 }
 
+@media (max-width: 480px) {
+    .macos-window {
+        width: 95vw;
+        max-width: 95vw;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+}
+
 @keyframes glow {
     0% {
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
             0 0 25px rgba(255, 255, 255, 0.15);
     }
+
     50% {
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
             0 0 25px rgba(74, 144, 226, 0.4);
     }
+
     100% {
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
             0 0 25px rgba(255, 255, 255, 0.15);
@@ -126,11 +141,9 @@ body::after {
 }
 
 .macos-titlebar {
-    background: linear-gradient(
-        to bottom,
-        rgba(236, 236, 236, 0.9),
-        rgba(219, 219, 219, 0.9)
-    );
+    background: linear-gradient(to bottom,
+            rgba(236, 236, 236, 0.9),
+            rgba(219, 219, 219, 0.9));
     color: #333;
     padding: 5px 8px;
     display: flex;
@@ -153,11 +166,9 @@ body::after {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0)
-    );
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0));
     z-index: -1;
 }
 
@@ -295,12 +306,15 @@ body::after {
         transform: translateX(0);
         opacity: 0;
     }
+
     10% {
         opacity: 0.3;
     }
+
     50% {
         transform: translateX(-40px);
     }
+
     100% {
         bottom: 120%;
         transform: translateX(40px);
@@ -334,11 +348,23 @@ h2 {
 }
 
 ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 li {
@@ -346,16 +372,15 @@ li {
 }
 
 .macos-link {
-    display: block;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    background: linear-gradient(
-        to bottom,
-        rgba(245, 245, 245, 0.6),
-        rgba(235, 235, 235, 0.4)
-    );
+    background: linear-gradient(to bottom,
+            rgba(245, 245, 245, 0.6),
+            rgba(235, 235, 235, 0.4));
     color: #333;
     font-size: 14px;
-    padding: 10px 14px;
+    padding: 12px 14px;
     text-align: left;
     width: calc(100% - 30px);
     border-radius: 8px;
@@ -368,6 +393,14 @@ li {
     overflow: hidden;
 }
 
+@media (max-width: 480px) {
+    .macos-link {
+        padding: 10px;
+        width: calc(100% - 22px);
+        font-size: 13px;
+    }
+}
+
 .macos-link::before {
     content: "";
     position: absolute;
@@ -375,11 +408,9 @@ li {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0)
-    );
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0));
     z-index: 0;
 }
 
@@ -400,11 +431,9 @@ li {
 }
 
 .macos-link:hover {
-    background: linear-gradient(
-        to bottom,
-        rgba(225, 240, 252, 0.7),
-        rgba(210, 230, 248, 0.6)
-    );
+    background: linear-gradient(to bottom,
+            rgba(225, 240, 252, 0.7),
+            rgba(210, 230, 248, 0.6));
     border-color: rgba(137, 180, 225, 0.7);
     box-shadow: 0 0 5px rgba(137, 180, 225, 0.3);
     transform: scale(1.01);
@@ -412,11 +441,9 @@ li {
 }
 
 .macos-link:active {
-    background: linear-gradient(
-        to bottom,
-        rgba(210, 230, 248, 0.8),
-        rgba(195, 220, 245, 0.8)
-    );
+    background: linear-gradient(to bottom,
+            rgba(210, 230, 248, 0.8),
+            rgba(195, 220, 245, 0.8));
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
     transform: scale(0.99);
 }
@@ -431,6 +458,15 @@ li {
     position: relative;
     z-index: 1;
     transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+    .macos-link-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
 }
 
 .macos-link:hover .macos-link-icon {
@@ -439,11 +475,9 @@ li {
 }
 
 .dock-bar {
-    background: linear-gradient(
-        to bottom,
-        rgba(238, 238, 238, 0.3),
-        rgba(225, 225, 225, 0.3)
-    );
+    background: linear-gradient(to bottom,
+            rgba(238, 238, 238, 0.3),
+            rgba(225, 225, 225, 0.3));
     border-top: 1px solid rgba(200, 200, 200, 0.3);
     padding: 8px 12px;
     font-size: 12px;
@@ -465,11 +499,9 @@ li {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0)
-    );
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0));
     z-index: 0;
 }
 
@@ -534,11 +566,9 @@ li {
 }
 
 .iframe-titlebar {
-    background: linear-gradient(
-        to bottom,
-        rgba(236, 236, 236, 0.9),
-        rgba(219, 219, 219, 0.9)
-    );
+    background: linear-gradient(to bottom,
+            rgba(236, 236, 236, 0.9),
+            rgba(219, 219, 219, 0.9));
     color: #333;
     padding: 5px 8px;
     display: flex;
@@ -561,11 +591,9 @@ li {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0)
-    );
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0));
     z-index: -1;
 }
 
@@ -606,6 +634,7 @@ li {
         transform: scale(0.8);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -617,6 +646,7 @@ li {
         transform: scale(1);
         opacity: 1;
     }
+
     to {
         transform: scale(0.8);
         opacity: 0;
@@ -643,10 +673,12 @@ li {
 
 /* Efeito de dock bounce ao abrir */
 @keyframes dock-bounce {
+
     0%,
     100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-15px);
     }
