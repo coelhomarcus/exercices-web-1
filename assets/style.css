@@ -38,9 +38,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 50%,
-            rgba(255, 255, 255, 0),
-            rgba(0, 0, 0, 0.4));
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
     z-index: -1;
     pointer-events: none;
 }
@@ -99,16 +97,13 @@ body::after {
     max-width: 90vw;
     max-height: 90vh;
     position: relative;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
-        0 0 25px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 255, 255, 0.15);
     overflow: hidden;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     animation: glow 8s infinite alternate;
 }
-
-
 
 @keyframes glow {
     0% {
@@ -128,9 +123,7 @@ body::after {
 }
 
 .macos-titlebar {
-    background: linear-gradient(to bottom,
-            rgba(236, 236, 236, 0.9),
-            rgba(219, 219, 219, 0.9));
+    background: linear-gradient(to bottom, rgba(236, 236, 236, 0.9), rgba(219, 219, 219, 0.9));
     color: #333;
     padding: 5px 8px;
     display: flex;
@@ -153,9 +146,7 @@ body::after {
     left: 0;
     right: 0;
     height: 50%;
-    background: linear-gradient(to bottom,
-            rgba(255, 255, 255, 0.6),
-            rgba(255, 255, 255, 0));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
     z-index: -1;
 }
 
@@ -221,7 +212,6 @@ body::after {
     filter: brightness(0.9);
 }
 
-
 .macos-content {
     padding: 20px;
     overflow-y: auto;
@@ -253,22 +243,6 @@ ul {
     gap: 20px;
     padding: 0;
     margin: 0;
-}
-
-@media (max-width: 768px) {
-    .finder-icon {
-        display: none;
-    }
-
-    ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    ul {
-        grid-template-columns: 1fr;
-    }
 }
 
 li {
@@ -399,7 +373,6 @@ li {
             rgba(210, 230, 248, 0.6));
     border-color: rgba(137, 180, 225, 0.7);
     box-shadow: 0 0 5px rgba(137, 180, 225, 0.3);
-    transform: scale(1.03);
 }
 
 .macos-link:hover .project-name {
@@ -472,9 +445,6 @@ li {
 }
 
 
-
-/* Window control button styling */
-
 .macos-button.macos-close:hover {
     background-color: #ff5f56;
     box-shadow: 0 0 0 1px rgba(238, 68, 68, 0.4);
@@ -491,4 +461,20 @@ li {
     background-color: #27c93f;
     box-shadow: 0 0 0 1px rgba(30, 195, 55, 0.4);
     transition: all 0.1s ease;
+}
+
+@media (max-width: 768px) {
+    .finder-icon {
+        display: none;
+    }
+
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
 }
