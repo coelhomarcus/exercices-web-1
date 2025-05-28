@@ -19,6 +19,7 @@ Este repositório contém os exercícios desenvolvidos para a disciplina de Web 
 - 📰 Tech News
 - 🙋🏻 Portfolio Dev
 - 🪙 Conversor Moeda
+- 💵 Projeto Reembolso
 
 ## 📝 Notas
 
