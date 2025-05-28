@@ -83,10 +83,12 @@ form.addEventListener("submit", (e) => {
       console.log("remove");
 
       const li = e.target.parentNode;
-      const amountValue = li
+      const amountText = li
         .querySelector(".expense-amount")
         .textContent.replace("R$", "")
-        .replace(",", ".");
+        .trim();
+
+      const amountValue = Number(amountText.replace(/\D/g, "")) / 100;
 
       countExpense--;
       amountTotal -= Number(amountValue);
