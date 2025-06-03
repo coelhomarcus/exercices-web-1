@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f5fb;
+}
+
+header {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+main {
+  max-width: 630px;
+  width: 630px;
+}
+
+.main-header p {
+  color: #ca3884;
+  margin-bottom: 16px;
+}
+
+.main-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.input-container input {
+  width: 100%;
+  min-height: 44px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+}
+
+.input-container button {
+  min-width: 160px;
+  min-height: 44px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ca3884;
+  color: white;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 160px;
+  min-height: 20px;
+  padding-block: 5px;
+  padding-inline: 15px;
+  border-radius: 12px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.item-container {
+  display: flex;
+  gap: 10px;
+}
+
+.item button {
+  min-width: 44px;
+  min-height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: none;
+}
+
+.delete-button {
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.remove-alert {
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 160px;
+  min-height: 20px;
+  padding-block: 5px;
+  padding-inline: 15px;
+  border-radius: 12px;
+  background-color: #c93847;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.remove-alert div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remove-alert button {
+  min-width: 44px;
+  min-height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 20px;
+  }
+
+  header {
+    display: none;
+  }
+
+  main {
+    margin-top: 30px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .input-container input {
+    margin-bottom: 10px;
+  }
+
+  .input-container button {
+    width: 100%;
+  }
+}

@@ -6,5 +6,46 @@
     <title>Quicklist</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logo" />
+    </header>
+    <main>
+      <div class="main-header">
+        <p><- Voltar</p>
+        <h1>Compras da semana</h1>
+      </div>
+      <div class="input-container">
+        <input
+          type="text"
+          id="input-item"
+          placeholder="Adicionar um novo item"
+        />
+        <button id="input-button">Adicionar item</button>
+      </div>
+      <div>
+        <ul class="item-list">
+          <!-- <li class="item">
+            <div class="item-container">
+              <input type="checkbox" name="" id="" />
+              <p>Pão de forma</p>
+            </div>
+            <button>
+              <img src="./assets/delete.png" class="delete-button" alt="" />
+            </button>
+          </li> -->
+        </ul>
+
+        <div class="remove-alert">
+          <div>
+            <img src="./assets/warning-circle-filled.png" alt="" />
+            <p>O item foi removido da lista!</p>
+          </div>
+          <button>X</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
