@@ -6,6 +6,11 @@ const alertMessage = document.querySelector(".remove-alert");
 const alertMessageButton = document.querySelector(".remove-alert button");
 
 addButton.addEventListener("click", function () {
+  if (!input.value) {
+    alert("Por favor insira um item.");
+    return;
+  }
+
   list.innerHTML += `<li class="item">
             <div class="item-container">
               <input type="checkbox" name="" id="" />
