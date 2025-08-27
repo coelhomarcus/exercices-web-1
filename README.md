@@ -1,4 +1,4 @@
-## 🚀 Exercícios Web 1
+## 📕 Exercícios Web 1
 
 Este repositório contém os exercícios desenvolvidos para a disciplina de Web I (Turma 2023 - UNIFESSPA)<br/>por Marcus Vinicius Rangel Coelho.
 
@@ -8,7 +8,7 @@ Este repositório contém os exercícios desenvolvidos para a disciplina de Web 
 
 - HTML
 - CSS
-- JAVASCRIPT
+- JavaScript
 
 ## 📌 Exercícios Incluídos
 
